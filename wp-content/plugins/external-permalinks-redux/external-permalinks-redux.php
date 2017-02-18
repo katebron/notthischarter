@@ -90,7 +90,7 @@ class external_permalinks_redux {
 	 * @return null
 	 */
 	function action_admin_init() {
-		$post_types = apply_filters( 'epr_post_types', array( 'post', 'page' ) );
+		$post_types = apply_filters( 'epr_post_types', array( 'post', 'page', 'news_items' ) );
 
 		if ( ! is_array( $post_types ) )
 			return;
