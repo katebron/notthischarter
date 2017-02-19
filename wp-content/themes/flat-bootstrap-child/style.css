@@ -1,14 +1,34 @@
 /*
- Theme Name:   Flat Bootstrap Child
- Theme URI:    http://example.com/twenty-fifteen-child/
- Description:  Flat Bootstrap Child Theme
- Author:       TTeam
- Author URI:   http://example.com
- Template:     flat-bootstrap
- Version:      1.0.0
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, flexible-header, theme-options, sticky-post, threaded-comments, light, translation-ready, rtl-language-support, custom-background
- Text Domain:  flat bootstrap
+Theme Name: Flat Bootstrap Child
+Theme URI: http://xtremelysocial.com/wordpress/child/
+Description: Child theme for Flat Bootstrap. Includes a stylesheet (style.css) for you to restyle any of the CSS and a functions.php file to change theme parameters or components. Both files include samples of a few common things you might want to do.
+Author: XtremelySocial
+Author url: http://xtremelysocial.com
+Version: 1.5
+License: GNU General Public License
+License URI: http://www.opensource.org/licenses/GPL-3.0
+Template: flat-bootstrap
+Template Version: 1.9
+Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, flexible-header, theme-options, sticky-post, threaded-comments, light, translation-ready, rtl-language-support, custom-background
 */
 
+/* 
+ * IMPORT the parent theme's stylesheet(s). NOTE: This was moved to functions.php for
+ * performance reasons.
+ */
+/*@import url("../flat-bootstrap/style.css");*/
+
+/* PUT YOUR CHANGED STYLES HERE 
+ * 
+ * The best way to do this is to copy in the relevant section from the parent's style.css
+ * file, change what you want, and remove the lines that you didn't change.
+ *
+ * NOTE: All these examples here are included just to show you how to do the most common
+ * things that users have requested, such as changing colors and the look of buttons, etc.
+*/
+/* line 1, sass/style.scss */
+.navbar {
+  color: orange;
+}
+
+/*# sourceMappingURL=style.css.map */
