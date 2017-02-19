@@ -1,34 +1,50 @@
-/*
-Theme Name: Flat Bootstrap Child
-Theme URI: http://xtremelysocial.com/wordpress/child/
-Description: Child theme for Flat Bootstrap. Includes a stylesheet (style.css) for you to restyle any of the CSS and a functions.php file to change theme parameters or components. Both files include samples of a few common things you might want to do.
-Author: XtremelySocial
-Author url: http://xtremelysocial.com
-Version: 1.5
-License: GNU General Public License
-License URI: http://www.opensource.org/licenses/GPL-3.0
-Template: flat-bootstrap
-Template Version: 1.9
-Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, flexible-header, theme-options, sticky-post, threaded-comments, light, translation-ready, rtl-language-support, custom-background
-*/
+/*STYLES TO REUSE */
+/* line 2, sass/style.scss */
+.force-wide {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
 
-/* 
- * IMPORT the parent theme's stylesheet(s). NOTE: This was moved to functions.php for
- * performance reasons.
- */
-/*@import url("../flat-bootstrap/style.css");*/
+/* HEADER */
+/* line 17, sass/style.scss */
+#site-branding {
+  width: 50%;
+  position: relative;
+}
+/* line 20, sass/style.scss */
+#site-branding .custom-header-image {
+  margin: 1em 0 0 4em;
+}
 
-/* PUT YOUR CHANGED STYLES HERE 
- * 
- * The best way to do this is to copy in the relevant section from the parent's style.css
- * file, change what you want, and remove the lines that you didn't change.
- *
- * NOTE: All these examples here are included just to show you how to do the most common
- * things that users have requested, such as changing colors and the look of buttons, etc.
-*/
-/* line 1, sass/style.scss */
+/* line 24, sass/style.scss */
 .navbar {
-  color: orange;
+  width: 50%;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  margin-right: 4em;
+  margin-top: -5em;
+}
+
+/* line 36, sass/style.scss */
+.navbar-nav li a {
+  color: blue !important;
+  text-decoration: underline;
+  padding: 0 0.5em;
+  border-right: 1px solid grey;
+}
+/* line 42, sass/style.scss */
+.navbar-nav li a:hover {
+  text-decoration: underline;
+}
+/* line 47, sass/style.scss */
+.navbar-nav li:last-of-type a {
+  border-right: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,55 @@
+/*STYLES TO REUSE */
+.force-wide{
+  
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+}
+
+
+
+
+/* HEADER */
+#site-branding{
+  width: 50%;
+  position: relative;
+  	.custom-header-image{
+  	  margin: 1em 0 0 4em;
+  	}
+}
 .navbar{
-  color: orange;
+  width: 50%;
+  border: none;
+   background-color: transparent;
+   position: absolute;
+  right: 0;
+   margin-right: 4em;
+   margin-top: -5em;
+}
+
+.navbar-nav{
+  li{
+  	a{
+  	  color: blue !important;
+  	  text-decoration: underline;
+  	  padding: 0 0.5em;
+  	  border-right: 1px solid grey;
+    }
+    a:hover{
+    	text-decoration: underline;
+    }
+  }
+   li:last-of-type{
+    	a{
+    	  border-right: none;
+        }
+    }
+}
+
+#front_image{
+ //@extend .force-wide;
 }
