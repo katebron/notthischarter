@@ -15,11 +15,11 @@
 get_header(); ?>
 
 <?php get_sidebar( 'home' ); ?>
-
-<div class="container">
-	<div id="front_image">
+<div id="front_image">
        <img src="wp-content/themes/flat-bootstrap-child/images/downtown.jpg" alt="Downtown Framingham">
 	</div>	
+<div class="container">
+	
 <div id="main-grid" class="row">
 
 	<div id="primary" class="content-area-wide col-md-12">
