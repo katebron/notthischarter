@@ -17,13 +17,17 @@ get_header(); ?>
 <?php get_template_part( 'content', 'header' ); ?>
 
 <?php get_sidebar( 'home' ); ?>
-
+<?php if ( is_home() ) {
+echo "<div id="front_image">
+       <img src="wp-content/themes/flat-bootstrap-child/images/downtown.jpg" alt="Downtown Framingham">
+	</div>"
+}	?>
 <div class="container">
 <div id="main-grid" class="row">
 
 	<div id="primary" class="content-area col-md-8">
 		<main id="main" class="site-main" role="main">
-        <p>Hi belarus</p>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
