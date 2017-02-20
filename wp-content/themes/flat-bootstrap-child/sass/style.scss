@@ -14,6 +14,13 @@
 
 
 /* HEADER */
+#ntc_search{
+ @media all and (min-width: 700px){	
+    float: right;
+    margin-right: 2em;
+    margin-top: 1em;
+  }
+}
 #site-branding{
   position: relative;
   	.custom-header-image{
@@ -28,7 +35,7 @@
   border: none;
   background-color: transparent;
   @media all and (min-width: 1070px){
-    width: 60%;
+    //width: 60%;
    position: absolute;
    right: 0;
    margin-top: -5em;
@@ -36,6 +43,8 @@
 }
 
 .navbar-nav{
+  float: right;
+  margin-right: 2em;
   li{
   	a{
   	  color: blue !important;
@@ -57,6 +66,9 @@
   .content-header{
   	margin-top: 1em;
   	background-image: url(images/downtown.jpg);
+  	background-size: 100%;
+  	background-repeat: no-repeat;
+  	background-color: transparent;
   	.page-title{
   		visibility: hidden;
   	}
@@ -93,30 +105,28 @@
       #post-541{
   	    background-color: white;
   	    padding: 0.5em 1em;
-  	    margin-top: 1em;
   	    h2{
   		  margin-top: 0;
   	    }
       }
       .query-core-issue-blocks-wrapper{
         @media all and (min-width: 700px){
-  	      width: 60%;
+  	      width: 100%;
   	    }
   	    .query-core-issue-blocks{
   		  display: flex;
+  		  justify-content: space-between;
   		  flex-wrap: wrap;
   		  .query-row{
   		    width: 100%;
-  		    @media all and (min-width: 600px){
-              width: calc(50% - 2em);
-  		    }
+  		    
   		  }
   	      @media all and (min-width: 600px){
   		    .query-row{
-              width: calc(50% - 2em);
+              width: calc(50% - 1em);
   		    }
   		    .query-row-even{
-  		  	  margin-right: 2em;
+  		  	  margin-right: 1em;
   		    }
   		  }  
   		  .query-title{
