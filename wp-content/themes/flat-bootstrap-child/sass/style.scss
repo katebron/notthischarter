@@ -1,4 +1,5 @@
 /*STYLES TO REUSE */
+$header_color: #297CBB;
 .force-wide{
   
     width: 100vw;
@@ -10,7 +11,26 @@
 
 }
 
+.block-style{
+  background-color: white;
+  padding: 0.25em 0.75em;
+}
 
+.block-title-style{
+  text-align: center;
+  background-color: $header_color;
+  color: white;
+  padding: 0.25em;
+  margin-bottom: 0;
+  a{
+    color: white;
+   }
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, a:link{
+  color: $header_color;
+}
 
 
 /* HEADER */
@@ -130,19 +150,10 @@
   		    }
   		  }  
   		  .query-title{
-  		    text-align: center;
-  		    background-color: #19b798;
-  		    color: white;
-  		    padding: 0.25em;
-  		    margin-bottom: 0;
-  		    a{
-  		  	  color: white;
-  		    }
-  		    font-weight: bold;
+  		    @extend .block-title-style;
   		  }
   		  .query-content{
-  		    background-color: white;
-  		    padding: 0.25em 0.75em;
+  		    @extend .block-style;
   		  }
   	    }
 
@@ -156,4 +167,23 @@
 
 }
 
-//
+//SIDEBAR
+#secondary{
+  .query-content{
+  	@extend .block-style;
+  	margin-bottom: 1em;
+  }
+  .widget-title{
+  	@extend .block-title-style;
+
+  }
+  h2.widget-title{
+  	margin-top: 0;
+  }
+  .query-take-action-block-wrapper{
+    a{
+      padding: 0.5em 2em;
+      background-color: $header_color;
+    }
+  }
+}
