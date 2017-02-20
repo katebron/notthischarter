@@ -28,7 +28,7 @@ $header_color: #297CBB;
   font-weight: bold;
 }
 
-h1, h2, h3, h4, a:link{
+h1, h2, h3, h4, a:link, a:hover{
   color: $header_color;
 }
 
@@ -238,6 +238,9 @@ h1, h2, h3, h4, a:link{
   	  .query-field-post_title{
   	  	width: calc(70% - 1em);
   	  	margin-left: 1em;
+  	  }
+  	  .john-stasik-status{
+  	  	font-size: 12px;
   	  }
   	  .query-field-post_excerpt{
   	  	padding-top: 1em;

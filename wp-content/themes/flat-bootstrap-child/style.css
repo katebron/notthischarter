@@ -30,7 +30,7 @@
 }
 
 /* line 31, sass/style.scss */
-h1, h2, h3, h4, a:link {
+h1, h2, h3, h4, a:link, a:hover {
   color: #297CBB;
 }
 
@@ -233,6 +233,10 @@ h1, h2, h3, h4, a:link {
   margin-left: 1em;
 }
 /* line 242, sass/style.scss */
+#secondary .query-john-stasik-block .query-row-first .john-stasik-status {
+  font-size: 12px;
+}
+/* line 245, sass/style.scss */
 #secondary .query-john-stasik-block .query-row-first .query-field-post_excerpt {
   padding-top: 1em;
   padding-bottom: 0.5em;
