@@ -35,6 +35,9 @@ h1, h2, h3, h4, a:link{
 
 /* HEADER */
 #ntc_search{
+ input[type="submit"]{
+ 	background-color: $header_color;
+ }	
  @media all and (min-width: 700px){	
     float: right;
     margin-right: 2em;
@@ -65,16 +68,23 @@ h1, h2, h3, h4, a:link{
 .navbar-nav{
   float: right;
   margin-right: 2em;
+  .active{
+  	  a:hover{
+      	background-color: transparent !important;
+      } 	
+  }
   li{
   	a{
-  	  color: blue !important;
+  	  color: $header_color !important;
   	  text-decoration: underline;
+  	  font-weight: bold;
   	  padding: 0 0.5em;
   	  border-right: 1px solid grey;
     }
     a:hover{
     	text-decoration: underline;
     }
+    
   }
    li:last-of-type{
     	a{
@@ -158,6 +168,14 @@ h1, h2, h3, h4, a:link{
   	    }
 
       }
+      #post-683{
+      	.query-title{
+      	  @extend .block-title-style;
+      	}
+      	.query-content{
+      	  @extend .block-style;
+      	}
+      }
     }
   }
   //hide repeated content
@@ -169,6 +187,8 @@ h1, h2, h3, h4, a:link{
 
 //SIDEBAR
 #secondary{
+
+  //for most sidebar blocks
   .query-content{
   	@extend .block-style;
   	margin-bottom: 1em;
@@ -180,10 +200,50 @@ h1, h2, h3, h4, a:link{
   h2.widget-title{
   	margin-top: 0;
   }
+
+  //for donate/volunteer block
   .query-take-action-block-wrapper{
-    a{
-      padding: 0.5em 2em;
-      background-color: $header_color;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: space-around;
+  	.query-field{
+  	  margin: 2em;
+  	}
+  	.query-field-link{
+  		display: block;
+  		background-color: #ffc83f;
+        color: #142b44;
+        padding: 1em;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 5px;
+
+    }
+    .query-row-1{
+      .query-field-link{
+        background-color: #16c98d;
+      }
+    }
+  }
+  //for john stasik block
+  .query-john-stasik-block{
+  	.query-row-first{
+  	  display: flex;
+  	  flex-wrap: wrap;
+  	  padding-top: 0.5em;
+  	  .query-field-featured_image{
+  	  	width: 30%;
+  	  	padding-top: 0.25em;
+  	  }
+  	  .query-field-post_title{
+  	  	width: calc(70% - 1em);
+  	  	margin-left: 1em;
+  	  }
+  	  .query-field-post_excerpt{
+  	  	padding-top: 1em;
+  	  	padding-bottom: 0.5em;
+  	  	font-style: italic;
+  	  }
     }
   }
 }
