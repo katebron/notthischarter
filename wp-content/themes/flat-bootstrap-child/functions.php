@@ -111,4 +111,18 @@ function xsbf_child_credits ( $site_credits ) {
 	return $site_credits;
 }
 
+function flat_bootstrap_child_scripts_method() {
+    wp_enqueue_script(
+        'theme',
+        get_stylesheet_directory_uri() . '/js/theme.js',
+        array( 'jquery' )
+    );
+}
+
+add_action( 'wp_enqueue_scripts', 'flat_bootstrap_child_scripts_method');
+
+function svg_mime_types( $mimes ) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;}
+add_filter( 'upload_mimes', 'svg_mime_types' );
 
