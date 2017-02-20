@@ -17,11 +17,7 @@ get_header(); ?>
 <?php get_template_part( 'content', 'header' ); ?>
 
 <?php get_sidebar( 'home' ); ?>
-<?php if ( is_home() ) {
-echo "<div id="front_image">
-       <img src="wp-content/themes/flat-bootstrap-child/images/downtown.jpg" alt="Downtown Framingham">
-	</div>"
-}	?>
+
 <div class="container">
 <div id="main-grid" class="row">
 

@@ -12,39 +12,150 @@
 /* HEADER */
 /* line 17, sass/style.scss */
 #site-branding {
-  width: 50%;
   position: relative;
 }
-/* line 20, sass/style.scss */
-#site-branding .custom-header-image {
-  margin: 1em 0 0 4em;
+@media all and (min-width: 500px) {
+  /* line 19, sass/style.scss */
+  #site-branding .custom-header-image {
+    width: 50%;
+    margin: 1em 0 0 4em;
+  }
 }
 
-/* line 24, sass/style.scss */
+/* line 27, sass/style.scss */
 .navbar {
-  width: 50%;
   border: none;
   background-color: transparent;
-  position: absolute;
-  right: 0;
-  margin-right: 4em;
-  margin-top: -5em;
+}
+@media all and (min-width: 1070px) {
+  /* line 27, sass/style.scss */
+  .navbar {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    margin-top: -5em;
+  }
 }
 
-/* line 36, sass/style.scss */
+/* line 40, sass/style.scss */
 .navbar-nav li a {
   color: blue !important;
   text-decoration: underline;
   padding: 0 0.5em;
   border-right: 1px solid grey;
 }
-/* line 42, sass/style.scss */
+/* line 46, sass/style.scss */
 .navbar-nav li a:hover {
   text-decoration: underline;
 }
-/* line 47, sass/style.scss */
+/* line 51, sass/style.scss */
 .navbar-nav li:last-of-type a {
   border-right: none;
+}
+
+/* line 57, sass/style.scss */
+.home .content-header {
+  margin-top: 1em;
+  background-image: url(images/downtown.jpg);
+}
+/* line 60, sass/style.scss */
+.home .content-header .page-title {
+  visibility: hidden;
+}
+
+/**FRONT PAGE
+  tagline in .ntc_banner
+  posts embedded within post-544
+**/
+/* line 69, sass/style.scss */
+#front_image {
+  margin-top: 1em;
+}
+
+/* line 74, sass/style.scss */
+.home .container {
+  position: relative;
+}
+/* line 78, sass/style.scss */
+.home .container #post-544 .ntc_banner {
+  font-weight: bold;
+}
+@media all and (min-width: 700px) {
+  /* line 78, sass/style.scss */
+  .home .container #post-544 .ntc_banner {
+    position: absolute;
+    right: 0;
+    margin-right: -10em;
+    top: 0;
+    margin-top: -3.5em;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 2em;
+    text-align: right;
+  }
+}
+/* line 93, sass/style.scss */
+.home .container #post-544 #post-541 {
+  background-color: white;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+}
+/* line 97, sass/style.scss */
+.home .container #post-544 #post-541 h2 {
+  margin-top: 0;
+}
+@media all and (min-width: 700px) {
+  /* line 101, sass/style.scss */
+  .home .container #post-544 .query-core-issue-blocks-wrapper {
+    width: 60%;
+  }
+}
+/* line 105, sass/style.scss */
+.home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 108, sass/style.scss */
+.home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-row {
+  width: 100%;
+}
+@media all and (min-width: 600px) {
+  /* line 108, sass/style.scss */
+  .home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-row {
+    width: calc(50% - 2em);
+  }
+}
+@media all and (min-width: 600px) {
+  /* line 115, sass/style.scss */
+  .home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-row {
+    width: calc(50% - 2em);
+  }
+  /* line 118, sass/style.scss */
+  .home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-row-even {
+    margin-right: 2em;
+  }
+}
+/* line 122, sass/style.scss */
+.home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-title {
+  text-align: center;
+  background-color: #19b798;
+  color: white;
+  padding: 0.25em;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+/* line 128, sass/style.scss */
+.home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-title a {
+  color: white;
+}
+/* line 133, sass/style.scss */
+.home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-content {
+  background-color: white;
+  padding: 0.25em 0.75em;
+}
+/* line 143, sass/style.scss */
+.home #sidebar-home {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

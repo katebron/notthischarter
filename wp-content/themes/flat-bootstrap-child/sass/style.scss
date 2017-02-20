@@ -15,20 +15,24 @@
 
 /* HEADER */
 #site-branding{
-  width: 50%;
   position: relative;
   	.custom-header-image{
-  	  margin: 1em 0 0 4em;
+  		@media all and (min-width: 500px){
+          width: 50%;
+          margin: 1em 0 0 4em;
+        }
   	}
+
 }
 .navbar{
-  width: 50%;
   border: none;
-   background-color: transparent;
+  background-color: transparent;
+  @media all and (min-width: 1070px){
+    width: 60%;
    position: absolute;
-  right: 0;
-   margin-right: 4em;
+   right: 0;
    margin-top: -5em;
+  }
 }
 
 .navbar-nav{
@@ -49,7 +53,97 @@
         }
     }
 }
-
-#front_image{
- //@extend .force-wide;
+.home{
+  .content-header{
+  	margin-top: 1em;
+  	background-image: url(images/downtown.jpg);
+  	.page-title{
+  		visibility: hidden;
+  	}
+  }
 }
+/**FRONT PAGE
+  tagline in .ntc_banner
+  posts embedded within post-544
+**/
+#front_image{
+  margin-top: 1em;
+}
+//FRONT PAGE
+.home{
+  .container{
+  	position: relative;
+    #post-544{
+  
+	  .ntc_banner{
+	  	font-weight: bold;
+	  	@media all and (min-width: 700px){
+	      position: absolute;
+	  	  right: 0;
+
+	  	  margin-right: -10em;
+	  	  top: 0;
+	  	  margin-top: -3.5em;
+	  	  color: white;
+	  	  text-shadow: 2px 2px black;
+	  	  font-size: 2em;
+	  	  text-align: right;
+	  	}
+      }
+      #post-541{
+  	    background-color: white;
+  	    padding: 0.5em 1em;
+  	    margin-top: 1em;
+  	    h2{
+  		  margin-top: 0;
+  	    }
+      }
+      .query-core-issue-blocks-wrapper{
+        @media all and (min-width: 700px){
+  	      width: 60%;
+  	    }
+  	    .query-core-issue-blocks{
+  		  display: flex;
+  		  flex-wrap: wrap;
+  		  .query-row{
+  		    width: 100%;
+  		    @media all and (min-width: 600px){
+              width: calc(50% - 2em);
+  		    }
+  		  }
+  	      @media all and (min-width: 600px){
+  		    .query-row{
+              width: calc(50% - 2em);
+  		    }
+  		    .query-row-even{
+  		  	  margin-right: 2em;
+  		    }
+  		  }  
+  		  .query-title{
+  		    text-align: center;
+  		    background-color: #19b798;
+  		    color: white;
+  		    padding: 0.25em;
+  		    margin-bottom: 0;
+  		    a{
+  		  	  color: white;
+  		    }
+  		    font-weight: bold;
+  		  }
+  		  .query-content{
+  		    background-color: white;
+  		    padding: 0.25em 0.75em;
+  		  }
+  	    }
+
+      }
+    }
+  }
+  //hide repeated content
+  #sidebar-home{
+  	display: none;
+  }
+
+}
+
+//
