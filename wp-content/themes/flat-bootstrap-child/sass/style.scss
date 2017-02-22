@@ -88,7 +88,9 @@ h1, h2, h3, h4, a:link, a:hover{
    margin-top: -5em;
   }
 }
-
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+  background-color: transparent !important;
+}
 .navbar-nav{
   float: right;
   margin-right: 2em;
@@ -116,6 +118,9 @@ h1, h2, h3, h4, a:link, a:hover{
         }
     }
 }
+header.content-header{
+  min-height: 90px !important;
+}
 .home{
   .content-header{
   	margin-top: 1em;
@@ -128,6 +133,20 @@ h1, h2, h3, h4, a:link, a:hover{
   	}
   }
 }
+/* SIDE PAGES*/
+#primary{
+  .content-header{
+    min-height: none !important;
+  }
+  margin-top: 1.2em;
+  @extend .block-style;
+
+  .john-stasik-titles{
+    display: none;
+  }
+}
+
+
 /**FRONT PAGE
   tagline in .ntc_banner
   posts embedded within post-544
@@ -139,6 +158,10 @@ h1, h2, h3, h4, a:link, a:hover{
 .home{
   .container{
   	position: relative;
+    #primary{
+      background-color: transparent;
+      margin-top: 1em;
+    }
     #post-544{
       h2{
         margin-top: 0;
@@ -213,7 +236,7 @@ h1, h2, h3, h4, a:link, a:hover{
 
 //SIDEBAR
 #secondary{
-
+  padding-top: 1.2em;
   //for most sidebar blocks
   .query-content{
    @extend .block-side-style;
