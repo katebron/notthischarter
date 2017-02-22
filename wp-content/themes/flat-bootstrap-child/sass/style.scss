@@ -56,12 +56,17 @@ h1, h2, h3, h4, a:link, a:hover{
   color: $header_color;
 }
 
+button:hover, button:focus, html input[type="button"]:hover, 
+html input[type="button"]:focus, input[type="submit"]:hover,
+ input[type="submit"]:focus,input[type="submit"]{
+  background-color: $header_color;
+ }  
+
+
 
 /* HEADER */
 #ntc_search{
- input[type="submit"]{
- 	background-color: $header_color;
- }	
+ 
  @media all and (min-width: 700px){	
     float: right;
     margin-right: 2em;
@@ -140,7 +145,58 @@ header.content-header{
   }
   margin-top: 1.2em;
   @extend .block-style;
-
+  margin-bottom: 1em;
+  
+  /* INFORMATION AND NEWS PAGE */
+  .query-documents-wrapper{
+    .query-row{
+      padding-bottom: 0.5em;
+    }
+  }
+  .query-news-items-list-wrapper{
+    .query-field-meta_news_source, .query-field-meta_news_article_publish_date{
+      display: inline;
+    }
+    .query-field-meta_news_source{
+      padding-right: 0.25em;
+      border-right: 1px solid #808080s;
+    }
+    .query-field-meta_news_article_publish_date{
+      padding-left: 0.5em;
+    }
+  }
+  /* About us page */
+  .query-officers-block-wrapper{
+    .query-row{
+      margin-bottom: 1em;
+      position: relative;
+      .query-field-featured_image{
+        position: absolute;
+        left: 0;
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+        max-width: 100px;
+      }
+      .query-field-post_content, .query-field-post_title{
+        margin-left: 115px;
+      }
+    }
+    
+  }
+  /*DONATE PAGE*/
+  .nf-form-layout{
+    .field-wrap{
+      flex-direction: column;
+    }
+    .nf-form-label{
+      label{
+        text-align: left !important;
+      }
+    }
+    .label-left  .nf-field-label{
+      text-align: left !important;
+    }
+  }
   .john-stasik-titles{
     display: none;
   }
@@ -238,7 +294,7 @@ header.content-header{
 #secondary{
   padding-top: 1.2em;
   //for most sidebar blocks
-  .query-content{
+  .query-content, .widget>ul{
    @extend .block-side-style;
   }
   .widget-title{
@@ -247,6 +303,13 @@ header.content-header{
   }
   h2.widget-title{
   	margin-top: 0;
+  }
+  .widget > ul{
+    padding-bottom: 0.5em;
+    margin-bottom: 0 !important;
+  }
+  aside.widget{
+    margin-bottom: 1em;
   }
 
   //for donate/volunteer block
