@@ -1,7 +1,9 @@
 /*
 Theme Name: Flat Bootstrap Child
+Theme URI: http://xtremelysocial.com/wordpress/child/
 Description: Child theme for Flat Bootstrap. Includes a stylesheet (style.css) for you to restyle any of the CSS and a functions.php file to change theme parameters or components. Both files include samples of a few common things you might want to do.
-Author: Lteam
+Author: XtremelySocial
+Author url: http://xtremelysocial.com
 Version: 1.5
 License: GNU General Public License
 License URI: http://www.opensource.org/licenses/GPL-3.0
@@ -9,9 +11,8 @@ Template: flat-bootstrap
 Template Version: 1.9
 Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, featured-images, featured-image-header, full-width-template, flexible-header, theme-options, sticky-post, threaded-comments, light, translation-ready, rtl-language-support, custom-background
 */
-
 /*STYLES TO REUSE */
-/* line 3, sass/style.scss */
+/* line 18, sass/style.scss */
 .force-wide {
   width: 100vw;
   position: relative;
@@ -21,19 +22,26 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
   margin-right: -50vw;
 }
 
-/* line 14, sass/style.scss */
+/* line 29, sass/style.scss */
 body {
-  background-color: #eeeeee;
+  background-color: #dbe6ec !important;
 }
 
-/* line 18, sass/style.scss */
-.block-style, .home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-content, .home .container #post-544 #post-683 .query-content, #secondary .query-content {
+/* line 33, sass/style.scss */
+.block-style, .home .container #post-544 .query-featured-homepage-post-wrapper, .home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-content, .home .container #post-544 #post-683 .query-content {
   background-color: white;
   padding: 0.25em 0.75em;
 }
 
-/* line 23, sass/style.scss */
-.block-title-style, .home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-title, .home .container #post-544 #post-683 .query-title, #secondary .widget-title {
+/* line 37, sass/style.scss */
+.block-side-style, #secondary .query-content {
+  background-color: #eee;
+  padding: 0.25em 0.75em;
+  margin-bottom: 1em;
+}
+
+/* line 43, sass/style.scss */
+.block-title-style, .home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-title, .home .container #post-544 #post-683 .query-title, #secondary .widget-title {
   text-align: center;
   background-color: #297CBB;
   color: white;
@@ -41,23 +49,23 @@ body {
   margin-bottom: 0;
   font-weight: bold;
 }
-/* line 29, sass/style.scss */
-.block-title-style a, .home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-title a, .home .container #post-544 #post-683 .query-title a, #secondary .widget-title a {
+/* line 49, sass/style.scss */
+.block-title-style a, .home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-title a, .home .container #post-544 #post-683 .query-title a, #secondary .widget-title a {
   color: white;
 }
 
-/* line 35, sass/style.scss */
+/* line 55, sass/style.scss */
 h1, h2, h3, h4, a:link, a:hover {
   color: #297CBB;
 }
 
 /* HEADER */
-/* line 42, sass/style.scss */
+/* line 62, sass/style.scss */
 #ntc_search input[type="submit"] {
   background-color: #297CBB;
 }
 @media all and (min-width: 700px) {
-  /* line 41, sass/style.scss */
+  /* line 61, sass/style.scss */
   #ntc_search {
     float: right;
     margin-right: 2em;
@@ -65,25 +73,25 @@ h1, h2, h3, h4, a:link, a:hover {
   }
 }
 
-/* line 51, sass/style.scss */
+/* line 71, sass/style.scss */
 #site-branding {
   position: relative;
 }
 @media all and (min-width: 500px) {
-  /* line 53, sass/style.scss */
+  /* line 73, sass/style.scss */
   #site-branding .custom-header-image {
     width: 50%;
     margin: 1em 0 0 4em;
   }
 }
 
-/* line 61, sass/style.scss */
+/* line 81, sass/style.scss */
 .navbar {
   border: none;
   background-color: transparent;
 }
 @media all and (min-width: 1070px) {
-  /* line 61, sass/style.scss */
+  /* line 81, sass/style.scss */
   .navbar {
     position: absolute;
     right: 0;
@@ -91,16 +99,16 @@ h1, h2, h3, h4, a:link, a:hover {
   }
 }
 
-/* line 72, sass/style.scss */
+/* line 92, sass/style.scss */
 .navbar-nav {
   float: right;
   margin-right: 2em;
 }
-/* line 76, sass/style.scss */
+/* line 96, sass/style.scss */
 .navbar-nav .active a:hover {
   background-color: transparent !important;
 }
-/* line 81, sass/style.scss */
+/* line 101, sass/style.scss */
 .navbar-nav li a {
   color: #297CBB !important;
   text-decoration: underline;
@@ -108,16 +116,16 @@ h1, h2, h3, h4, a:link, a:hover {
   padding: 0 0.5em;
   border-right: 1px solid grey;
 }
-/* line 88, sass/style.scss */
+/* line 108, sass/style.scss */
 .navbar-nav li a:hover {
   text-decoration: underline;
 }
-/* line 94, sass/style.scss */
+/* line 114, sass/style.scss */
 .navbar-nav li:last-of-type a {
   border-right: none;
 }
 
-/* line 100, sass/style.scss */
+/* line 120, sass/style.scss */
 .home .content-header {
   margin-top: 1em;
   background-image: url(images/downtown.jpg);
@@ -125,7 +133,7 @@ h1, h2, h3, h4, a:link, a:hover {
   background-repeat: no-repeat;
   background-color: transparent;
 }
-/* line 106, sass/style.scss */
+/* line 126, sass/style.scss */
 .home .content-header .page-title {
   visibility: hidden;
 }
@@ -134,21 +142,25 @@ h1, h2, h3, h4, a:link, a:hover {
   tagline in .ntc_banner
   posts embedded within post-544
 **/
-/* line 115, sass/style.scss */
+/* line 135, sass/style.scss */
 #front_image {
   margin-top: 1em;
 }
 
-/* line 120, sass/style.scss */
+/* line 140, sass/style.scss */
 .home .container {
   position: relative;
 }
-/* line 124, sass/style.scss */
+/* line 143, sass/style.scss */
+.home .container #post-544 h2 {
+  margin-top: 0;
+}
+/* line 147, sass/style.scss */
 .home .container #post-544 .ntc_banner {
   font-weight: bold;
 }
 @media all and (min-width: 700px) {
-  /* line 124, sass/style.scss */
+  /* line 147, sass/style.scss */
   .home .container #post-544 .ntc_banner {
     position: absolute;
     right: 0;
@@ -161,65 +173,57 @@ h1, h2, h3, h4, a:link, a:hover {
     text-align: right;
   }
 }
-/* line 139, sass/style.scss */
-.home .container #post-544 #post-541 {
-  background-color: white;
-  padding: 0.5em 1em;
-}
-/* line 142, sass/style.scss */
-.home .container #post-544 #post-541 h2 {
-  margin-top: 0;
+/* line 162, sass/style.scss */
+.home .container #post-544 .query-featured-homepage-post-wrapper {
+  padding-bottom: 1em;
 }
 @media all and (min-width: 700px) {
-  /* line 146, sass/style.scss */
-  .home .container #post-544 .query-core-issue-blocks-wrapper {
+  /* line 167, sass/style.scss */
+  .home .container #post-544 .query-second-core-issue-blocks-wrapper {
     width: 100%;
   }
 }
-/* line 150, sass/style.scss */
-.home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks {
+/* line 171, sass/style.scss */
+.home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 154, sass/style.scss */
-.home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-row {
+/* line 175, sass/style.scss */
+.home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-row {
   width: 100%;
+  margin-top: 1em;
 }
 @media all and (min-width: 600px) {
-  /* line 159, sass/style.scss */
-  .home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-row {
+  /* line 181, sass/style.scss */
+  .home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-row {
     width: calc(50% - 1em);
   }
-  /* line 162, sass/style.scss */
-  .home .container #post-544 .query-core-issue-blocks-wrapper .query-core-issue-blocks .query-row-even {
+  /* line 184, sass/style.scss */
+  .home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-row-even {
     margin-right: 1em;
   }
 }
-/* line 186, sass/style.scss */
+/* line 208, sass/style.scss */
 .home #sidebar-home {
   display: none;
 }
 
-/* line 196, sass/style.scss */
-#secondary .query-content {
-  margin-bottom: 1em;
-}
-/* line 204, sass/style.scss */
+/* line 225, sass/style.scss */
 #secondary h2.widget-title {
   margin-top: 0;
 }
-/* line 209, sass/style.scss */
+/* line 230, sass/style.scss */
 #secondary .query-take-action-block-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-/* line 213, sass/style.scss */
+/* line 234, sass/style.scss */
 #secondary .query-take-action-block-wrapper .query-field {
   margin: 2em;
 }
-/* line 216, sass/style.scss */
+/* line 237, sass/style.scss */
 #secondary .query-take-action-block-wrapper .query-field-link {
   display: block;
   background-color: #ffc83f;
@@ -229,31 +233,31 @@ h1, h2, h3, h4, a:link, a:hover {
   font-weight: bold;
   border-radius: 5px;
 }
-/* line 227, sass/style.scss */
+/* line 248, sass/style.scss */
 #secondary .query-take-action-block-wrapper .query-row-1 .query-field-link {
   background-color: #16c98d;
 }
-/* line 234, sass/style.scss */
+/* line 255, sass/style.scss */
 #secondary .query-john-stasik-block .query-row-first {
   display: flex;
   flex-wrap: wrap;
   padding-top: 0.5em;
 }
-/* line 238, sass/style.scss */
+/* line 259, sass/style.scss */
 #secondary .query-john-stasik-block .query-row-first .query-field-featured_image {
   width: 30%;
   padding-top: 0.25em;
 }
-/* line 242, sass/style.scss */
+/* line 263, sass/style.scss */
 #secondary .query-john-stasik-block .query-row-first .query-field-post_title {
   width: calc(70% - 1em);
   margin-left: 1em;
 }
-/* line 246, sass/style.scss */
+/* line 267, sass/style.scss */
 #secondary .query-john-stasik-block .query-row-first .john-stasik-status {
   font-size: 12px;
 }
-/* line 249, sass/style.scss */
+/* line 270, sass/style.scss */
 #secondary .query-john-stasik-block .query-row-first .query-field-post_excerpt {
   padding-top: 1em;
   padding-bottom: 0.5em;
