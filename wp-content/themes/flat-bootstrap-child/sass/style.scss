@@ -54,6 +54,10 @@ body{
 
 h1, h2, h3, h4, a:link, a:hover{
   color: $header_color;
+  
+}
+h1, h2, h3, h4{
+ font-weight: bold;
 }
 
 button:hover, button:focus, html input[type="button"]:hover, 
@@ -65,12 +69,15 @@ html input[type="button"]:focus, input[type="submit"]:hover,
 
 
 /* HEADER */
-#ntc_search{
+header{
+  position: relative;
+ #ntc_search{
  
- @media all and (min-width: 700px){	
-    float: right;
-    margin-right: 2em;
-    margin-top: 1em;
+   @media all and (min-width: 700px){	
+      float: right;
+      margin-right: 2em;
+      margin-top: 1em;
+    }
   }
 }
 #site-branding{
