@@ -146,10 +146,15 @@ header.content-header{
   }
 }
 /* SIDE PAGES*/
-#primary{
-  .content-header{
+.content-header{
     min-height: none !important;
+    h1{
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
   }
+#primary{
+
   margin-top: 1.2em;
   @extend .block-style;
   margin-bottom: 1em;
@@ -226,6 +231,9 @@ header.content-header{
 }
 //FRONT PAGE
 .home{
+  .content-header{
+    height:150px;
+  }  
   .container{
   	position: relative;
     #primary{
