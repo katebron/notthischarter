@@ -20,6 +20,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+	  <?php include('icons/symbol-defs.svg'); ?>
 <div id="page" class="hfeed site">
 
 	<?php do_action( 'before' ); ?>
