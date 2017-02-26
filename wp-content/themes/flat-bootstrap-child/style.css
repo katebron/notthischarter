@@ -24,7 +24,7 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
 
 /* line 29, sass/style.scss */
 body {
-  background-color: white !important;
+  background-color: #f5f5f5 !important;
 }
 
 /* line 33, sass/style.scss */
@@ -40,7 +40,7 @@ body {
 
 /* line 41, sass/style.scss */
 .block-side-style, #secondary .query-content, #secondary .widget > ul {
-  background-color: #99a9b3;
+  background-color: #eee;
   padding: 0.25em 0.75em;
   margin-bottom: 1em;
   color: black;
@@ -79,13 +79,12 @@ h1, h2, h3, h4 {
 button:hover, button:focus, html input[type="button"]:hover,
 html input[type="button"]:focus, input[type="submit"]:hover,
 input[type="submit"]:focus, input[type="submit"] {
-  background-color: #3b444f;
+  background-color: #297CBB;
 }
 
 /* HEADER */
 /* line 81, sass/style.scss */
 header {
-  background-color: #297CBB;
   position: relative;
 }
 @media all and (min-width: 700px) {
@@ -140,11 +139,11 @@ header {
 }
 /* line 127, sass/style.scss */
 .navbar-nav li a {
-  color: white !important;
+  color: #297CBB !important;
   text-decoration: underline;
   font-weight: bold;
   padding: 0 0.5em;
-  border-right: 1px solid white;
+  border-right: 1px solid #99a9b3;
 }
 /* line 134, sass/style.scss */
 .navbar-nav li a:hover {
@@ -342,10 +341,6 @@ header.content-header {
   width: 80%;
   text-align: left;
   padding-top: 0.5em;
-}
-/* line 324, sass/style.scss */
-.home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-content {
-  background-color: #f5f5f5;
 }
 /* line 342, sass/style.scss */
 .home #sidebar-home {
