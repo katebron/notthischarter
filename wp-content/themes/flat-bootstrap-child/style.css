@@ -155,23 +155,33 @@ header #ntc_search #soc_media ul li a:hover .icon {
     right: 0;
     margin-top: -5em;
   }
+  /* line 143, sass/style.scss */
+  .navbar .dropdown-menu {
+    margin-left: -2em;
+    z-index: 1001;
+  }
 }
 
-/* line 145, sass/style.scss */
+/* line 149, sass/style.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent !important;
 }
 
-/* line 148, sass/style.scss */
+/* line 152, sass/style.scss */
+.navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent !important;
+}
+
+/* line 155, sass/style.scss */
 .navbar-nav {
   float: right;
   margin-right: 2em;
 }
-/* line 152, sass/style.scss */
+/* line 159, sass/style.scss */
 .navbar-nav .active a:hover {
   background-color: transparent !important;
 }
-/* line 157, sass/style.scss */
+/* line 164, sass/style.scss */
 .navbar-nav li a {
   color: #297CBB !important;
   text-decoration: underline;
@@ -179,21 +189,21 @@ header #ntc_search #soc_media ul li a:hover .icon {
   padding: 0 0.5em;
   border-right: 1px solid #99a9b3;
 }
-/* line 164, sass/style.scss */
+/* line 171, sass/style.scss */
 .navbar-nav li a:hover {
   text-decoration: underline;
 }
-/* line 170, sass/style.scss */
+/* line 177, sass/style.scss */
 .navbar-nav li:last-of-type a {
   border-right: none;
 }
 
-/* line 175, sass/style.scss */
+/* line 182, sass/style.scss */
 header.content-header {
   min-height: 90px !important;
 }
 
-/* line 179, sass/style.scss */
+/* line 186, sass/style.scss */
 .home .content-header {
   background-image: url(images/FraminghamScenesComposite2.png);
   background-size: 225% !important;
@@ -201,23 +211,24 @@ header.content-header {
   background-color: transparent !important;
   background-position: right;
 }
-/* line 186, sass/style.scss */
+/* line 193, sass/style.scss */
 .home .content-header .page-title {
   visibility: hidden;
 }
 
 /* SIDE PAGES*/
-/* line 192, sass/style.scss */
+/* line 199, sass/style.scss */
 .content-header {
   min-height: none !important;
+  z-index: -1;
 }
-/* line 194, sass/style.scss */
+/* line 202, sass/style.scss */
 .content-header h1 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 
-/* line 199, sass/style.scss */
+/* line 207, sass/style.scss */
 #primary {
   margin-top: 1.2em;
   margin-bottom: 1em;
@@ -226,29 +237,29 @@ header.content-header {
   /*WHY VOTE NO? */
   /*DONATE PAGE*/
 }
-/* line 207, sass/style.scss */
+/* line 215, sass/style.scss */
 #primary .query-documents-wrapper .query-row {
   padding-bottom: 0.5em;
 }
-/* line 212, sass/style.scss */
+/* line 220, sass/style.scss */
 #primary .query-news-items-list-wrapper .query-field-meta_news_source, #primary .query-news-items-list-wrapper .query-field-meta_news_article_publish_date {
   display: inline;
 }
-/* line 215, sass/style.scss */
+/* line 223, sass/style.scss */
 #primary .query-news-items-list-wrapper .query-field-meta_news_source {
   padding-right: 0.25em;
   border-right: 1px solid #808080 s;
 }
-/* line 219, sass/style.scss */
+/* line 227, sass/style.scss */
 #primary .query-news-items-list-wrapper .query-field-meta_news_article_publish_date {
   padding-left: 0.5em;
 }
-/* line 225, sass/style.scss */
+/* line 233, sass/style.scss */
 #primary .query-officers-block-wrapper .query-row {
   margin-bottom: 1em;
   position: relative;
 }
-/* line 228, sass/style.scss */
+/* line 236, sass/style.scss */
 #primary .query-officers-block-wrapper .query-row .query-field-featured_image {
   position: absolute;
   left: 0;
@@ -256,31 +267,31 @@ header.content-header {
   margin-top: 0.5em;
   max-width: 100px;
 }
-/* line 235, sass/style.scss */
+/* line 243, sass/style.scss */
 #primary .query-officers-block-wrapper .query-row .query-field-post_content, #primary .query-officers-block-wrapper .query-row .query-field-post_title {
   margin-left: 115px;
 }
-/* line 238, sass/style.scss */
+/* line 246, sass/style.scss */
 #primary .query-officers-block-wrapper .query-row .query-field-post_title {
   font-weight: bold;
 }
-/* line 245, sass/style.scss */
+/* line 253, sass/style.scss */
 #primary .entry-meta {
   display: none;
 }
-/* line 250, sass/style.scss */
+/* line 258, sass/style.scss */
 #primary .nf-form-layout .field-wrap {
   flex-direction: column;
 }
-/* line 254, sass/style.scss */
+/* line 262, sass/style.scss */
 #primary .nf-form-layout .nf-form-label label {
   text-align: left !important;
 }
-/* line 258, sass/style.scss */
+/* line 266, sass/style.scss */
 #primary .nf-form-layout .label-left .nf-field-label {
   text-align: left !important;
 }
-/* line 262, sass/style.scss */
+/* line 270, sass/style.scss */
 #primary .john-stasik-titles {
   display: none;
 }
@@ -289,35 +300,36 @@ header.content-header {
   tagline in .ntc_banner
   posts embedded within post-544
 **/
-/* line 272, sass/style.scss */
+/* line 280, sass/style.scss */
 #front_image {
   margin-top: 1em;
 }
 
-/* line 277, sass/style.scss */
+/* line 285, sass/style.scss */
 .home .content-header {
   height: 150px;
 }
-/* line 280, sass/style.scss */
+/* line 288, sass/style.scss */
 .home .container {
   position: relative;
 }
-/* line 282, sass/style.scss */
+/* line 290, sass/style.scss */
 .home .container #primary {
   background-color: transparent;
   margin-top: 1em;
 }
-/* line 287, sass/style.scss */
+/* line 295, sass/style.scss */
 .home .container #post-544 h2 {
   margin-top: 0;
 }
-/* line 291, sass/style.scss */
+/* line 299, sass/style.scss */
 .home .container #post-544 .ntc_banner {
+  display: none;
   float: none;
   font-weight: bold;
 }
 @media all and (min-width: 700px) {
-  /* line 291, sass/style.scss */
+  /* line 299, sass/style.scss */
   .home .container #post-544 .ntc_banner {
     position: absolute;
     right: 0;
@@ -330,86 +342,86 @@ header.content-header {
     text-align: right;
   }
 }
-/* line 307, sass/style.scss */
+/* line 319, sass/style.scss */
 .home .container #post-544 .query-featured-homepage-post-wrapper {
   padding-bottom: 1em;
 }
 @media all and (min-width: 700px) {
-  /* line 312, sass/style.scss */
+  /* line 324, sass/style.scss */
   .home .container #post-544 .query-second-core-issue-blocks-wrapper {
     width: 100%;
   }
 }
-/* line 317, sass/style.scss */
+/* line 329, sass/style.scss */
 .home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 321, sass/style.scss */
+/* line 333, sass/style.scss */
 .home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-row {
   width: 100%;
   margin-top: 1em;
 }
 @media all and (min-width: 600px) {
-  /* line 327, sass/style.scss */
+  /* line 339, sass/style.scss */
   .home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-row {
     width: calc(50% - 1em);
   }
-  /* line 330, sass/style.scss */
+  /* line 342, sass/style.scss */
   .home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-row-even {
     margin-right: 1em;
   }
 }
-/* line 336, sass/style.scss */
+/* line 348, sass/style.scss */
 .home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-title {
   display: flex;
 }
-/* line 340, sass/style.scss */
+/* line 352, sass/style.scss */
 .home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-title .icon {
   fill: white;
   height: 1.5em;
   width: 20%;
 }
-/* line 347, sass/style.scss */
+/* line 359, sass/style.scss */
 .home .container #post-544 .query-second-core-issue-blocks-wrapper .query-second-core-issue-blocks .query-title a {
   width: 80%;
   text-align: left;
   padding-top: 0.5em;
 }
-/* line 373, sass/style.scss */
+/* line 385, sass/style.scss */
 .home #sidebar-home {
   display: none;
 }
 
-/* line 380, sass/style.scss */
+/* line 392, sass/style.scss */
 #secondary {
   padding-top: 1.2em;
 }
-/* line 390, sass/style.scss */
+/* line 402, sass/style.scss */
 #secondary h2.widget-title {
   margin-top: 0;
 }
-/* line 393, sass/style.scss */
+/* line 405, sass/style.scss */
 #secondary .widget > ul {
   padding-bottom: 0.5em;
   margin-bottom: 0 !important;
 }
-/* line 397, sass/style.scss */
+/* line 409, sass/style.scss */
 #secondary aside.widget {
   margin-bottom: 1em;
 }
-/* line 402, sass/style.scss */
+/* line 414, sass/style.scss */
 #secondary .query-take-action-block-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-/* line 406, sass/style.scss */
+/* line 418, sass/style.scss */
 #secondary .query-take-action-block-wrapper .query-field {
   margin: 2em;
 }
-/* line 409, sass/style.scss */
+/* line 421, sass/style.scss */
 #secondary .query-take-action-block-wrapper .query-field-link {
   display: block;
   background-color: #ffc83f;
@@ -419,31 +431,31 @@ header.content-header {
   font-weight: bold;
   border-radius: 5px;
 }
-/* line 420, sass/style.scss */
+/* line 432, sass/style.scss */
 #secondary .query-take-action-block-wrapper .query-row-1 .query-field-link {
   background-color: #16c98d;
 }
-/* line 427, sass/style.scss */
+/* line 439, sass/style.scss */
 #secondary .query-john-stasik-block .query-row-first {
   display: flex;
   flex-wrap: wrap;
   padding-top: 0.5em;
 }
-/* line 431, sass/style.scss */
+/* line 443, sass/style.scss */
 #secondary .query-john-stasik-block .query-row-first .query-field-featured_image {
   width: 30%;
   padding-top: 0.25em;
 }
-/* line 435, sass/style.scss */
+/* line 447, sass/style.scss */
 #secondary .query-john-stasik-block .query-row-first .query-field-post_title {
   width: calc(70% - 1em);
   margin-left: 1em;
 }
-/* line 439, sass/style.scss */
+/* line 451, sass/style.scss */
 #secondary .query-john-stasik-block .query-row-first .john-stasik-status {
   font-size: 12px;
 }
-/* line 442, sass/style.scss */
+/* line 454, sass/style.scss */
 #secondary .query-john-stasik-block .query-row-first .query-field-post_excerpt {
   padding-top: 1em;
   padding-bottom: 0.5em;
