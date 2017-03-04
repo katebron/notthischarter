@@ -99,10 +99,10 @@ header#masthead{
     margin-bottom: 1em;
     form{
       @extend .center_mob;
-      position: relative;
+     
       .search-field{
         margin-left: 2em;
-        
+
       }
     }
 
@@ -517,6 +517,15 @@ header.content-header{
     }
   }
 }
+.footer-text{
+  padding: 0 1em;
+}
+@media all and (min-width: 1000px){
+  .after-footer{
+    background-color: #2f2f2f;
+  }
+}
+
 //HK's inline styles
 .page-id-558 h1.page-title {
 color: #297CBB;
