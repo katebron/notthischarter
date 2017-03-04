@@ -126,3 +126,16 @@ function svg_mime_types( $mimes ) {
   return $mimes;}
 add_filter( 'upload_mimes', 'svg_mime_types' );
 
+
+add_filter( 'related_posts_by_taxonomy', 'km_rpbt_orderby_title', 10, 4 );
+function km_rpbt_orderby_title( $results, $post_id, $taxonomies, $args ) {
+
+	usort( $results, 'km_rpbt_sort_by_title' );
+	return $results;
+}
+
+function km_rpbt_sort_by_title( $a, $b ) {
+
+	return strcasecmp( $a->post_title, $b->post_title );
+}
+
