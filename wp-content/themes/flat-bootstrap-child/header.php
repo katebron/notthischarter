@@ -20,13 +20,23 @@
 </head>
 
 <body <?php body_class(); ?>>
-	  <?php include('icons/symbol-defs.svg'); ?>
+	    <?php include('icons/symbol-defs.svg'); ?>
 <div id="page" class="hfeed site">
 
 	<?php do_action( 'before' ); ?>
 	
 	<header id="masthead" class="site-header" role="banner">
     <div id="ntc_search">
+     <div id="soc_media">
+      <ul>
+       <li><a href="https://twitter.com/notthischarter"> <svg class="icon icon-twitter" aria-labelledby="twitter_link"><use xlink:href="#icon-twitter"></use><title id="twitter_link">Twitter link</title></svg></a>
+       </li>
+       <li><a href="https://www.facebook.com/NotThisCharter/"> <svg class="icon icon-facebook2" aria-labelledby="fb_link"><use xlink:href="#icon-facebook2"></use><title id="fb_link">Facebook link</title></svg></a>
+       </li>
+       <li><a href="https://www.instagram.com/notthischarter/"> <svg class="icon icon-instagram" aria-labelledby="insta_link"><use xlink:href="#icon-instagram"></use><title id="insta_link">Instagram link</title></svg></a>
+        </li>
+      </ul>
+    </div>
     <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 	<label>
 		<span class="screen-reader-text">Search for:</span>

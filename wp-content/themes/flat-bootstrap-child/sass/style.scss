@@ -15,6 +15,7 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
 
 /*STYLES TO REUSE */
 $header_color: #297CBB;
+$alert: #ffc83f;
 .force-wide{
   
     width: 100vw;
@@ -81,13 +82,42 @@ html input[type="button"]:focus, input[type="submit"]:hover,
 header{
   //background-color: $header_color;
   position: relative;
+  z-index: 1;
   @extend .force-wide;
  #ntc_search{
- 
+  z-index: 90;
+  width: 400px;
+  #soc_media{
+    float: left;
+    margin-top: 0.25em;
+    
+    .icon{
+       height: 1.25em;
+       width: 1.25em;
+       fill: $header_color;
+     }
+     ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li{
+        display: inline;
+        padding: 0.25em 0.5em 0 0.5em;
+        a:hover{
+         .icon{
+          fill: $alert;
+         }
+        }
+      }
+     }
+   }   
    @media all and (min-width: 700px){	
-      float: right;
+      position: absolute;
+      right: 0;
+      text-align: right;
       margin-right: 2em;
       margin-top: 1em;
+      
     }
   }
 }
@@ -259,9 +289,10 @@ header.content-header{
         }
        
 	    .ntc_banner{
+        float: none;
 	  	  font-weight: bold;
 	  	  @media all and (min-width: 700px){
-	        position: absolute;
+	       position: absolute;
 	  	    right: 0;
 	  	    margin-right: -10em;
 	  	    top: 0;

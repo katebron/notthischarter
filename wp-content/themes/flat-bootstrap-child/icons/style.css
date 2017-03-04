@@ -15,8 +15,8 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.icon-group {
-  width: 1.0712890625em;
+.icon-organization {
+  width: 0.875em;
 }
 
 .icon-organization {
@@ -29,4 +29,12 @@ Single-colored icons can be modified like so:
 
 .icon-users {
   width: 1.125em;
+}
+
+.icon-youtube2 {
+  width: 2.5087890625em;
+}
+
+.icon-group {
+  width: 1.0712890625em;
 }
