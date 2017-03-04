@@ -136,6 +136,31 @@ header{
 
 }
 .navbar{
+  .navbar-toggle, .navbar-toggle:focus, .navbar-toggle:hover{
+    background-color: $header_color;
+    .icon-bar{
+      background-color: white;
+    }
+  }
+  //MOBILE
+  .navbar-toggle:focus, .navbar-toggle:hover{
+    .icon-bar{
+      background-color: $alert;
+      border-color: $alert;
+    }
+  }
+  @media all and (max-width: 769px){
+    li{
+      padding-bottom: 0.5em;
+      a{
+        border-right: none !important;
+      }
+    }
+    #menu-main{
+      float: none;
+      padding-left: 1em;
+    }
+  }
   border: none;
   background-color: transparent;
   margin-bottom: 1em;
@@ -149,6 +174,7 @@ header{
      z-index: 1001;
    }
   }
+
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
   background-color: transparent !important;
