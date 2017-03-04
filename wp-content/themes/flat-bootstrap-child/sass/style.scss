@@ -29,6 +29,9 @@ $alert: #ffc83f;
 
 body{
   background-color: #f5f5f5!important;//#dbe6ec !important;
+  #masthead{
+    background-color: #dbe6ec;
+  }
 }
 
 #page{
@@ -135,6 +138,7 @@ header{
 .navbar{
   border: none;
   background-color: transparent;
+  margin-bottom: 1em;
   @media all and (min-width: 1070px){
     //width: 60%;
    position: absolute;
@@ -284,6 +288,7 @@ header.content-header{
 .home{
   .content-header{
     height:150px;
+    background-color: #dbe6ec !important;
   }  
   .container{
   	position: relative;
@@ -459,3 +464,30 @@ header.content-header{
     }
   }
 }
+//HK's inline styles
+.page-id-558 h1.page-title {
+color: #297CBB;
+}
+
+h2.query-title a{
+font-size: 24px;
+line-height: 1.15em;
+font-weight: bold;}
+
+.post-content a {
+font-size: 1em;
+}
+
+.query-john-stasik-block .query-field-post_title {
+font-size: 18px;
+font-weight: bold;
+}
+
+.query-john-stasik-block .john-stasik-status {
+font-size: 12px;
+font-weight: normal;
+}
+
+a {color: #297CBB;}
+a:hover {color: #297CBB;
+text-decoration: underline;}
