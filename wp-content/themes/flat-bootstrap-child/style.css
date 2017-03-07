@@ -13,7 +13,7 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
 */
 /*STYLES TO REUSE */
 /* line 19, sass/style.scss */
-.force-wide, header#masthead {
+.force-wide, header#masthead, .after-footer {
   width: 100vw;
   position: relative;
   left: 50%;
@@ -532,41 +532,46 @@ header.content-header {
     background-color: #2f2f2f;
   }
 }
-/* line 530, sass/style.scss */
+/* line 528, sass/style.scss */
+.after-footer {
+  max-width: none !important;
+}
+
+/* line 534, sass/style.scss */
 .page-id-558 h1.page-title {
   color: #297CBB;
 }
 
-/* line 534, sass/style.scss */
+/* line 538, sass/style.scss */
 h2.query-title a {
   font-size: 24px;
   line-height: 1.15em;
   font-weight: bold;
 }
 
-/* line 539, sass/style.scss */
+/* line 543, sass/style.scss */
 .post-content a {
   font-size: 1em;
 }
 
-/* line 543, sass/style.scss */
+/* line 547, sass/style.scss */
 .query-john-stasik-block .query-field-post_title {
   font-size: 18px;
   font-weight: bold;
 }
 
-/* line 548, sass/style.scss */
+/* line 552, sass/style.scss */
 .query-john-stasik-block .john-stasik-status {
   font-size: 12px;
   font-weight: normal;
 }
 
-/* line 553, sass/style.scss */
+/* line 557, sass/style.scss */
 a {
   color: #297CBB;
 }
 
-/* line 554, sass/style.scss */
+/* line 558, sass/style.scss */
 a:hover {
   color: #297CBB;
   text-decoration: underline;

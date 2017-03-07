@@ -525,6 +525,10 @@ header.content-header{
     background-color: #2f2f2f;
   }
 }
+.after-footer{
+  @extend .force-wide;
+  max-width: none !important;
+}
 
 //HK's inline styles
 .page-id-558 h1.page-title {
