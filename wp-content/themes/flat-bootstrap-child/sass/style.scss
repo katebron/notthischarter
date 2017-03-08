@@ -58,7 +58,7 @@ body{
    color: black;
    a{
     font-weight: bold !important;
-    color: #093367;
+    color: $darker_link;
    }
 }
 
@@ -85,7 +85,7 @@ h1, h2, h3, h4{
 button:hover, button:focus, html input[type="button"]:hover, 
 html input[type="button"]:focus, input[type="submit"]:hover,
  input[type="submit"]:focus,input[type="submit"]{
-  background-color: $header_color;
+  background-color: $darker_link;
  }  
 
 
@@ -115,7 +115,7 @@ header#masthead{
       .icon{
         height: 1.25em;
         width: 1.25em;
-        fill: $header_color;
+        fill: $darker_link;
       }
       ul{
         list-style-type: none;
@@ -220,7 +220,7 @@ header#masthead{
   }
   li{
   	a{
-  	  color: $header_color !important;
+  	  color: $darker_link !important;
   	  text-decoration: underline;
   	  font-weight: bold;
   	  padding: 0 0.5em;

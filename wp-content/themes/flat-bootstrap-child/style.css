@@ -62,7 +62,7 @@ body #masthead {
 /* line 59, sass/style.scss */
 .block-side-style a, #secondary .query-content a, #secondary .widget > ul a {
   font-weight: bold !important;
-  color: #093367;
+  color: #206192;
 }
 
 /* line 65, sass/style.scss */
@@ -93,7 +93,7 @@ h1, h2, h3, h4 {
 button:hover, button:focus, html input[type="button"]:hover,
 html input[type="button"]:focus, input[type="submit"]:hover,
 input[type="submit"]:focus, input[type="submit"] {
-  background-color: #297CBB;
+  background-color: #206192;
 }
 
 /* HEADER */
@@ -120,7 +120,7 @@ header#masthead #ntc_search #soc_media {
 header#masthead #ntc_search #soc_media .icon {
   height: 1.25em;
   width: 1.25em;
-  fill: #297CBB;
+  fill: #206192;
 }
 /* line 120, sass/style.scss */
 header#masthead #ntc_search #soc_media ul {
@@ -241,7 +241,7 @@ header#masthead #ntc_search #soc_media ul li a:hover .icon {
 }
 /* line 222, sass/style.scss */
 .navbar-nav li a {
-  color: #297CBB !important;
+  color: #206192 !important;
   text-decoration: underline;
   font-weight: bold;
   padding: 0 0.5em;
