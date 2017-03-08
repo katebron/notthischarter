@@ -15,6 +15,7 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
 
 /*STYLES TO REUSE */
 $header_color: #297CBB;
+$darker_link: #093367;
 $alert: #ffc83f;
 .force-wide{
   
@@ -29,6 +30,7 @@ $alert: #ffc83f;
 
 body{
   background-color: #f5f5f5!important;//#dbe6ec !important;
+  font-weight: 500;
   #masthead{
     background-color: #dbe6ec;
   }
@@ -163,7 +165,7 @@ header#masthead{
 }
 .navbar{
   .navbar-toggle, .navbar-toggle:focus, .navbar-toggle:hover{
-    background-color: $header_color;
+    background-color: $darker_link;
     .icon-bar{
       background-color: white;
     }
